@@ -1,10 +1,11 @@
 ! name: Swift
 ! description: Brave Search Goggle for easy searching of Swift language documentation, libraries, etc.
-! public: false
+! public: true
 ! author: Keisuke Chinone
-! avatar: #00b37a
+! avatar: #FF3D28
 ! homepage: https://github.com/KC-2001MS/swift-goggle
 
+! フレームワークとプログラミング言語に対しての比重
 *uikit*$boost=8
 *appkit*$boost=8
 *swiftui*$boost=5
@@ -32,16 +33,15 @@
 *objectivec*$discard
 *windows-app-sdk*$discard
 
+! サイトに対する比重
 $boost=6,site=swift.org
-$boost=5,site=swiftpackageindex.com
-$boost=5,site=swift-ast-explorer.com
-$boost=5,site=hackingwithswift.com
+$boost=6,site=swiftpackageindex.com
+$boost=6,site=swift-ast-explorer.com
+$boost=6,site=hackingwithswift.com
 $boost=5,site=tryswift.jp
 $boost=4,site=developer.apple.com
 $boost=4,site=iosdc.jp
 $boost=1,site=pkl-lang.org
-
-
 $discard,site=wikipedia.org
 $discard,site=support.google.com
 $discard,site=toolbar.google.com
@@ -56,6 +56,7 @@ $discard,site=getuikit.com
 $discard,site=swift.com
 $discard,site=taylorswift.com
 
+! サイトのパスによる比重
 /documentation/$boost=1,site=developer.apple.com
 /documentation/$boost=1,site=github.com
 /tutorials/$boost=1,site=developer.apple.com
@@ -64,6 +65,7 @@ $discard,site=taylorswift.com
 /design/$boost=1,site=developer.apple.com
 /@AppleDeveloper/$boost=6,site=youtube.com
 
+! URLのテキストによる比重
 *swift*$boost=6,site=github.com
 *swift*$boost=6,site=stackoverflow.com
 *swift*$boost=6,site=qiita.com
@@ -80,7 +82,6 @@ $discard,site=taylorswift.com
 *xcode*$boost=3,site=reddit.com
 *xcode*$boost=2,site=developer.apple.com
 *xcode*$boost=2,site=apps.apple.com
-
 *ios*$boost=1,site=github.com
 *ios*$boost=1,site=stackoverflow.com
 *ios*$boost=1,site=qiita.com
@@ -88,7 +89,6 @@ $discard,site=taylorswift.com
 *ios*$boost=1,site=note.com
 *ios*$boost=1,site=reddit.com
 *ios*$boost=1,site=developer.apple.com
-
 *ipados*$boost=1,site=github.com
 *ipados*$boost=1,site=stackoverflow.com
 *ipados*$boost=1,site=qiita.com
@@ -96,7 +96,6 @@ $discard,site=taylorswift.com
 *ipados*$boost=1,site=note.com
 *ipados*$boost=1,site=reddit.com
 *ipados*$boost=1,site=developer.apple.com
-
 *macos*$boost=1,site=github.com
 *macos*$boost=1,site=stackoverflow.com
 *macos*$boost=1,site=qiita.com
@@ -104,7 +103,6 @@ $discard,site=taylorswift.com
 *macos*$boost=1,site=note.com
 *macos*$boost=1,site=reddit.com
 *macos*$boost=1,site=developer.apple.com
-
 *tvos*$boost=1,site=github.com
 *tvos*$boost=1,site=stackoverflow.com
 *tvos*$boost=1,site=qiita.com
@@ -112,7 +110,6 @@ $discard,site=taylorswift.com
 *tvos*$boost=1,site=note.com
 *tvos*$boost=1,site=reddit.com
 *tvos*$boost=1,site=developer.apple.com
-
 *watchos*$boost=1,site=github.com
 *watchos*$boost=1,site=stackoverflow.com
 *watchos*$boost=1,site=qiita.com
@@ -120,7 +117,6 @@ $discard,site=taylorswift.com
 *watchos*$boost=1,site=note.com
 *watchos*$boost=1,site=reddit.com
 *watchos*$boost=1,site=developer.apple.com
-
 *visionos*$boost=1,site=github.com
 *visionos*$boost=1,site=stackoverflow.com
 *visionos*$boost=1,site=qiita.com
@@ -129,4 +125,5 @@ $discard,site=taylorswift.com
 *visionos*$boost=1,site=reddit.com
 *visionos*$boost=1,site=developer.apple.com
 
-! *Swift*$incontent
+! サイトのコンテンツによる比重
+*Swift*$incontent
