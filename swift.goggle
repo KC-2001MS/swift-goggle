@@ -21,6 +21,7 @@
 /tutorials.$boost=1
 /forums/$boost=1
 /forums.$boost=1
+.dev$boost=1
 *objc*$discard
 *objectivec*$discard
 *@AppleDeveloper*$boost=1
@@ -35,7 +36,6 @@ $boost=1,site=github.com
 $boost=1,site=stackoverflow.com
 $boost=1,site=qiita.com
 $boost=1,site=pkl-lang.org
-$boost=1,site=*.dev
 $downrank=2,site=wikipedia.org
 $discard,site=swift.com
 $discard,site=taylorswift.com
@@ -44,4 +44,3 @@ $discard,site=taylorswift.com
 *swift*$boost=3,site=stackoverflow.com
 *swift*$boost=3,site=qiita.com
 *swift*$boost=2,site=developer.apple.com
-*swift*$boost=2,site=*.dev
