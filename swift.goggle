@@ -1,0 +1,12 @@
+! name: Swift
+! description: Brave Search Goggle for easy searching of Swift language documentation, libraries, etc.
+! public: false
+! author: Keisuke Chinone
+! avatar: #00b37a
+! homepage: https://github.com/KC-2001MS/swift-goggle
+
+$boost=4,site=https://swiftpackageindex.com
+$boost=3,site=https://developer.apple.com/documentation
+$boost=2,site=tryswift.jp
+$boost=1,site=https://developer.apple.com
+$boost=1,site=iosdc.jp
