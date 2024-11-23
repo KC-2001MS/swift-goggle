@@ -126,4 +126,4 @@ $discard,site=taylorswift.com
 *visionos*$boost=1,site=developer.apple.com
 
 ! サイトのコンテンツによる比重
-*Swift*$incontent
+! *Swift*$incontent
