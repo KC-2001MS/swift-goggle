@@ -5,22 +5,25 @@
 ! avatar: #00b37a
 ! homepage: https://github.com/KC-2001MS/swift-goggle
 
-/swiftlang/$boost=3
-/swiftlang.$boost=3
-/swiftui/$boost=3
-/swiftui.$boost=3
+*swiftlang*$boost=3
+*swiftui*$boost=3
+/xcode/$boost=2
+/xcode.$boost=2
 /documentation/$boost=1
 /documentation.$boost=1
+/dev/$boost=1
+/dev.$boost=1
 /apple/$boost=1
 /apple.$boost=1
-/@AppleDeveloper/$boost=1
-/@AppleDeveloper.$boost=1
 /design/$boost=1
 /design.$boost=1
 /tutorials/$boost=1
 /tutorials.$boost=1
-objc$downrank=1
-objectivec$downrank=1
+/forums/$boost=1
+/forums.$boost=1
+*objc*$discard
+*objectivec*$discard
+*@AppleDeveloper*$boost=1
 
 $boost=4,site=swift.org
 $boost=4,site=swiftpackageindex.com
@@ -28,11 +31,17 @@ $boost=4,site=swift-ast-explorer.com
 $boost=4,site=tryswift.jp
 $boost=2,site=developer.apple.com
 $boost=2,site=iosdc.jp
-$boost=2,site=cmduconf.com
-$boost=1,site=youtube.com
 $boost=1,site=github.com
 $boost=1,site=stackoverflow.com
 $boost=1,site=qiita.com
-$downrank=1,site=wikipedia.org
-$downrank=2,site=swift.com
-$downrank=2,site=taylorswift.com
+$boost=1,site=pkl-lang.org
+$boost=1,site=*.dev
+$downrank=2,site=wikipedia.org
+$discard,site=swift.com
+$discard,site=taylorswift.com
+
+*swift*$boost=3,site=github.com
+*swift*$boost=3,site=stackoverflow.com
+*swift*$boost=3,site=qiita.com
+*swift*$boost=2,site=developer.apple.com
+*swift*$boost=2,site=*.dev
