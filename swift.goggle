@@ -13,30 +13,33 @@
 *app*$boost=2
 *@AppleDeveloper*$boost=2
 *swiftui*$boost=1
-*kotlin*$downrank=1
-*javaScript*$downrank=1
-*jquery*$downrank=1
-*aurelia*$downrank=1
-*rust*$downrank=1
-*ruby*$downrank=2
-*python*$downrank=2
-*csharp*$downrank=3
-*java*$downrank=3
-*cobol*$downrank=4
-*fortran*$downrank=4
-*ada*$downrank=4
-*css*$downrank=4
+*kotlin*$downrank=2
+*javaScript*$downrank=2
+*aurelia*$downrank=2
+*rust*$downrank=2
+*react*$downrank=2
+*vue*$downrank=2
+*gdscript*$downrank=3
+*ruby*$downrank=4
+*python*$downrank=4
+*csharp*$downrank=6
+*java*$downrank=6
+*jquery*$downrank=6
+*cobol*$downrank=8
+*fortran*$downrank=8
+*ada*$downrank=8
+*css*$downrank=8
 *objc*$discard
 *objectivec*$discard
 
-/documentation/$boost=1
-/documentation.$boost=1
+/apple/$boost=3
+/apple.$boost=3
+/documentation/$boost=2
+/documentation.$boost=2
 /dev/$boost=1
 /dev.$boost=1
 .dev$boost=1
 .io$boost=1
-/apple/$boost=1
-/apple.$boost=1
 
 $boost=4,site=swift.org
 $boost=4,site=swiftpackageindex.com
@@ -55,8 +58,15 @@ $boost=1,site=reddit.com
 
 $downrank=4,site=wikipedia.org
 $downrank=4,site=support.google.com
+$downrank=4,site=toolbar.google.com
+$downrank=4,site=developer.android.com
+$downrank=4,site=play.google.com
 $downrank=4,site=support.apple.com
+$downrank=4,site=workspace.google.com
+$downrank=4,site=discussions.apple.com
 $downrank=4,site=support.microsoft.com
+$downrank=4,site=learn.microsoft.com
+$discard,site=getuikit.com
 $discard,site=swift.com
 $discard,site=taylorswift.com
 
@@ -124,3 +134,5 @@ $discard,site=taylorswift.com
 *visionos*$boost=1,site=note.com
 *visionos*$boost=1,site=reddit.com
 *visionos*$boost=1,site=developer.apple.com
+
+*Swift*$inContent
