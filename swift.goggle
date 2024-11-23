@@ -5,8 +5,9 @@
 ! avatar: #00b37a
 ! homepage: https://github.com/KC-2001MS/swift-goggle
 
+/documentation/$boost=1
+
 $boost=4,site=swiftpackageindex.com
-$boost=3,site=developer.apple.com/documentation
 $boost=2,site=tryswift.jp
 $boost=1,site=developer.apple.com
 $boost=1,site=iosdc.jp
