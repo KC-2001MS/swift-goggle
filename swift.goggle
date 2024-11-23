@@ -5,17 +5,14 @@
 ! avatar: #00b37a
 ! homepage: https://github.com/KC-2001MS/swift-goggle
 
-*uikit*$boost=5
-*appkit*$boost=5
-*@AppleDeveloper*$boost=3
-*swiftui*$boost=2
-*design*$boost=1
-*tutorials*$boost=1
-*forums*$boost=1
+*uikit*$boost=8
+*appkit*$boost=8
+*swiftui*$boost=5
+*swiftwinui*$boost=5
 *kotlin*$downrank=1
 *dart*$downrank=1
 *flutter*$downrank=1
-*javaScript*$downrank=3
+*javascript*$downrank=3
 *rust*$downrank=4
 *react*$downrank=5
 *vue*$downrank=5
@@ -30,17 +27,10 @@
 *fortran*$downrank=10
 *ada*$downrank=10
 *css*$downrank=10
+*applehelp*$downrank=10
 *objc*$discard
 *objectivec*$discard
 *windows-app-sdk*$discard
-
-/documentation/$boost=2
-/documentation.$boost=2
-!/dev/$boost=1
-!/dev.$boost=1
-!.dev$boost=1
-!.io$boost=1
-*applehelp*$downrank=10
 
 $boost=6,site=swift.org
 $boost=5,site=swiftpackageindex.com
@@ -66,14 +56,22 @@ $discard,site=getuikit.com
 $discard,site=swift.com
 $discard,site=taylorswift.com
 
-*swift*$boost=3,site=github.com
-*swift*$boost=3,site=stackoverflow.com
-*swift*$boost=3,site=qiita.com
-*swift*$boost=3,site=medium.com
-*swift*$boost=3,site=note.com
-*swift*$boost=3,site=reddit.com
-*swift*$boost=2,site=developer.apple.com
-*swift*$boost=2,site=apps.apple.com
+/documentation/$boost=1,site=developer.apple.com
+/documentation/$boost=1,site=github.com
+/tutorials/$boost=1,site=developer.apple.com
+/tutorials/$boost=1,site=github.com
+/forums/$boost=1,site=developer.apple.com
+/design/$boost=1,site=developer.apple.com
+/@AppleDeveloper/$boost=6,site=youtube.com
+
+*swift*$boost=6,site=github.com
+*swift*$boost=6,site=stackoverflow.com
+*swift*$boost=6,site=qiita.com
+*swift*$boost=6,site=medium.com
+*swift*$boost=6,site=note.com
+*swift*$boost=6,site=reddit.com
+*swift*$boost=4,site=developer.apple.com
+*swift*$boost=4,site=apps.apple.com
 *xcode*$boost=3,site=github.com
 *xcode*$boost=3,site=stackoverflow.com
 *xcode*$boost=3,site=qiita.com
