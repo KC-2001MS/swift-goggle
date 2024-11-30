@@ -38,6 +38,8 @@ $boost=6,site=swift.org
 $boost=6,site=swiftpackageindex.com
 $boost=6,site=swift-ast-explorer.com
 $boost=6,site=hackingwithswift.com
+$boost=6,site=swiftwasm.org
+$boost=6,site=vapor.codes
 $boost=5,site=tryswift.jp
 $boost=4,site=developer.apple.com
 $boost=4,site=iosdc.jp
