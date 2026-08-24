@@ -7,10 +7,10 @@
 ! issues: https://github.com/KC-2001MS/swift-goggle/issues
 ! license: MIT
 
-! 既定のアクションを変更し、どの命令にもマッチしない結果を除外する
+! Change the default action: remove results not matching any other rule
 $discard
 
-! フレームワークとプログラミング言語に対しての比重
+! Weights for frameworks and programming languages
 *swiftui*$boost=8
 *uikit*$boost=7
 *appkit*$boost=7
@@ -28,7 +28,7 @@ $discard
 *objective-c*$boost=2
 *windows-app-sdk*$discard
 
-! サイトに対する比重
+! Weights for sites
 $boost=6,site=swift.org
 $boost=6,site=www.swift.org
 $boost=6,site=forums.swift.org
@@ -58,7 +58,7 @@ $discard,site=swift.com
 $discard,site=taylorswift.com
 $discard,site=www.taylorswift.com
 
-! サイトのパスによる比重
+! Weights for URL paths
 /documentation/$boost=4,site=developer.apple.com
 /documentation/$boost=4,site=github.com
 /tutorials/$boost=2,site=developer.apple.com
@@ -68,7 +68,7 @@ $discard,site=www.taylorswift.com
 /@AppleDeveloper/$boost=6,site=youtube.com
 /@AppleDeveloper/$boost=6,site=www.youtube.com
 
-! URLのテキストによる比重
+! Weights for text in URLs
 *swift*$boost=6,site=github.com
 *swift*$boost=6,site=stackoverflow.com
 *swift*$boost=6,site=qiita.com
@@ -132,24 +132,25 @@ $discard,site=www.taylorswift.com
 *visionos*$boost=1,site=reddit.com
 *visionos*$boost=1,site=developer.apple.com
 
-! サイトのコンテンツによる比重
-! $incontent は未実装のためコメントアウトしてある
+! Weights for page content
+! $incontent is not implemented yet, so these are commented out
 !
-! 言語本体
+! Languages
 ! *swift*$boost=6,incontent
 ! *objc*$boost=2,incontent
 ! *objective-c*$boost=2,incontent
 ! *pkl*$boost=1,incontent
 !
-! UI フレームワーク
-! *swiftui*$boost=5,incontent
-! *uikit*$boost=8,incontent
-! *appkit*$boost=8,incontent
-! *swiftwin32*$boost=5,incontent
-! *swift-win32*$boost=5,incontent
-! *swiftwin32ui*$boost=5,incontent
+! UI frameworks
+! *swiftui*$boost=8,incontent
+! *uikit*$boost=7,incontent
+! *appkit*$boost=7,incontent
+! *swiftwinui*$boost=6,incontent
+! *swift-winui*$boost=6,incontent
+! *swiftwin32*$boost=6,incontent
+! *swift-win32*$boost=6,incontent
 !
-! グラフィックスと機械学習
+! Graphics and machine learning
 ! *metalkit*$boost=5,incontent
 ! *msl*$boost=5,incontent
 ! *coreml*$boost=5,incontent
@@ -158,7 +159,7 @@ $discard,site=www.taylorswift.com
 ! *create ml*$boost=5,incontent
 ! *mlx*$boost=5,incontent
 !
-! ツールとライブラリ
+! Tools and libraries
 ! *xcode*$boost=3,incontent
 ! *swiftplaygrounds*$boost=5,incontent
 ! *swift playgrounds*$boost=5,incontent
