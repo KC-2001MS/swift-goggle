@@ -5,11 +5,15 @@
 ! avatar: #FF3D28
 ! homepage: https://github.com/KC-2001MS/swift-goggle
 
+! 既定のアクションを変更し、どの命令にもマッチしない結果を除外する
+$discard
+
 ! フレームワークとプログラミング言語に対しての比重
 *uikit*$boost=8
 *appkit*$boost=8
 *swiftui*$boost=5
 *swiftwinui*$boost=5
+*swift-winui*$boost=5
 *kotlin*$downrank=1
 *dart*$downrank=1
 *flutter*$downrank=1
@@ -22,6 +26,7 @@
 *ruby*$downrank=7
 *python*$downrank=7
 *csharp*$downrank=8
+*c-sharp*$downrank=8
 *java*$downrank=8
 *jquery*$downrank=9
 *cobol*$downrank=10
@@ -31,6 +36,7 @@
 *applehelp*$downrank=10
 *objc*$discard
 *objectivec*$discard
+*objective-c*$discard
 *windows-app-sdk*$discard
 
 ! サイトに対する比重
@@ -44,7 +50,7 @@ $boost=5,site=tryswift.jp
 $boost=4,site=developer.apple.com
 $boost=4,site=iosdc.jp
 $boost=1,site=pkl-lang.org
-$discard,site=wikipedia.org
+wikipedia.org^$discard
 $discard,site=support.google.com
 $discard,site=toolbar.google.com
 $discard,site=developer.android.com
