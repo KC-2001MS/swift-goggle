@@ -4,46 +4,39 @@
 ! author: Keisuke Chinone
 ! avatar: #FF3D28
 ! homepage: https://github.com/KC-2001MS/swift-goggle
+! issues: https://github.com/KC-2001MS/swift-goggle/issues
+! license: MIT
 
 ! 既定のアクションを変更し、どの命令にもマッチしない結果を除外する
 $discard
 
 ! フレームワークとプログラミング言語に対しての比重
-*uikit*$boost=8
-*appkit*$boost=8
-*swiftui*$boost=5
-*swiftwinui*$boost=5
-*swift-winui*$boost=5
-*kotlin*$downrank=1
-*dart*$downrank=1
-*flutter*$downrank=1
-*javascript*$downrank=3
-*rust*$downrank=4
-*react*$downrank=5
-*vue*$downrank=5
-*aurelia*$downrank=5
-*gdscript*$downrank=6
-*ruby*$downrank=7
-*python*$downrank=7
-*csharp*$downrank=8
-*c-sharp*$downrank=8
-*java*$downrank=8
-*jquery*$downrank=9
-*cobol*$downrank=10
-*fortran*$downrank=10
-*ada*$downrank=10
-*css*$downrank=10
-*applehelp*$downrank=10
-*objc*$discard
-*objectivec*$discard
-*objective-c*$discard
+*swiftui*$boost=8
+*uikit*$boost=7
+*appkit*$boost=7
+*swiftwinui*$boost=6
+*swift-winui*$boost=6
+*swiftwin32*$boost=6
+*swift-win32*$boost=6
+*metalkit*$boost=5
+*coreml*$boost=5
+*createml*$boost=5
+*swift-argument-parser*$boost=5
+*xcode*$boost=3
+*objc*$boost=2
+*objectivec*$boost=2
+*objective-c*$boost=2
 *windows-app-sdk*$discard
 
 ! サイトに対する比重
 $boost=6,site=swift.org
+$boost=6,site=www.swift.org
+$boost=6,site=forums.swift.org
+$boost=6,site=docs.swift.org
 $boost=6,site=swiftpackageindex.com
 $boost=6,site=swift-ast-explorer.com
 $boost=6,site=hackingwithswift.com
+$boost=6,site=www.hackingwithswift.com
 $boost=6,site=swiftwasm.org
 $boost=6,site=vapor.codes
 $boost=5,site=tryswift.jp
@@ -63,15 +56,17 @@ $discard,site=learn.microsoft.com
 $discard,site=getuikit.com
 $discard,site=swift.com
 $discard,site=taylorswift.com
+$discard,site=www.taylorswift.com
 
 ! サイトのパスによる比重
-/documentation/$boost=1,site=developer.apple.com
-/documentation/$boost=1,site=github.com
-/tutorials/$boost=1,site=developer.apple.com
-/tutorials/$boost=1,site=github.com
+/documentation/$boost=4,site=developer.apple.com
+/documentation/$boost=4,site=github.com
+/tutorials/$boost=2,site=developer.apple.com
+/tutorials/$boost=2,site=github.com
 /forums/$boost=1,site=developer.apple.com
 /design/$boost=1,site=developer.apple.com
 /@AppleDeveloper/$boost=6,site=youtube.com
+/@AppleDeveloper/$boost=6,site=www.youtube.com
 
 ! URLのテキストによる比重
 *swift*$boost=6,site=github.com
@@ -80,22 +75,26 @@ $discard,site=taylorswift.com
 *swift*$boost=6,site=medium.com
 *swift*$boost=6,site=note.com
 *swift*$boost=6,site=reddit.com
+*swift*$boost=6,site=www.reddit.com
+*swift*$boost=6,site=dev.to
+*swift*$boost=6,site=zenn.dev
+*swift*$boost=6,site=speakerdeck.com
 *swift*$boost=4,site=developer.apple.com
 *swift*$boost=4,site=apps.apple.com
-*xcode*$boost=3,site=github.com
-*xcode*$boost=3,site=stackoverflow.com
-*xcode*$boost=3,site=qiita.com
-*xcode*$boost=3,site=medium.com
-*xcode*$boost=3,site=note.com
-*xcode*$boost=3,site=reddit.com
-*xcode*$boost=2,site=developer.apple.com
-*xcode*$boost=2,site=apps.apple.com
+*msl*$boost=5,site=developer.apple.com
+*msl*$boost=5,site=github.com
+*mlx*$boost=5,site=github.com
+*mlx*$boost=5,site=huggingface.co
+*vapor*$boost=5,site=github.com
+*vapor*$boost=5,site=stackoverflow.com
+*pkl*$boost=1,site=github.com
 *ios*$boost=1,site=github.com
 *ios*$boost=1,site=stackoverflow.com
 *ios*$boost=1,site=qiita.com
 *ios*$boost=1,site=medium.com
 *ios*$boost=1,site=note.com
 *ios*$boost=1,site=reddit.com
+*ios*$boost=1,site=www.reddit.com
 *ios*$boost=1,site=developer.apple.com
 *ipados*$boost=1,site=github.com
 *ipados*$boost=1,site=stackoverflow.com
@@ -134,4 +133,34 @@ $discard,site=taylorswift.com
 *visionos*$boost=1,site=developer.apple.com
 
 ! サイトのコンテンツによる比重
-! *Swift*$incontent
+! $incontent は未実装のためコメントアウトしてある
+!
+! 言語本体
+! *swift*$boost=6,incontent
+! *objc*$boost=2,incontent
+! *objective-c*$boost=2,incontent
+! *pkl*$boost=1,incontent
+!
+! UI フレームワーク
+! *swiftui*$boost=5,incontent
+! *uikit*$boost=8,incontent
+! *appkit*$boost=8,incontent
+! *swiftwin32*$boost=5,incontent
+! *swift-win32*$boost=5,incontent
+! *swiftwin32ui*$boost=5,incontent
+!
+! グラフィックスと機械学習
+! *metalkit*$boost=5,incontent
+! *msl*$boost=5,incontent
+! *coreml*$boost=5,incontent
+! *core ml*$boost=5,incontent
+! *createml*$boost=5,incontent
+! *create ml*$boost=5,incontent
+! *mlx*$boost=5,incontent
+!
+! ツールとライブラリ
+! *xcode*$boost=3,incontent
+! *swiftplaygrounds*$boost=5,incontent
+! *swift playgrounds*$boost=5,incontent
+! *vapor*$boost=5,incontent
+! *swift-argument-parser*$boost=5,incontent
