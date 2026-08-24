@@ -1,0 +1,48 @@
+name: Source to Boost
+description: Suggest a site, path or keyword that should rank higher.
+title: "[Boost]: "
+labels: ["boost"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thank you for suggesting a source. Swift Goggle removes every result that
+        matches none of its rules, so a missing source is invisible rather than
+        merely ranked low.
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: The hostname, URL path or keyword you would like to see boosted.
+      placeholder: swiftbysundell.com
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example URLs
+      description: Two or three real URLs from this source that a Swift search should return.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why it belongs here
+      description: What makes this a source worth surfacing for Swift questions?
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Is the whole site about Swift?
+      description: If not, the rule will be limited to Swift-related URLs on that site.
+      options:
+        - 'Yes, the entire site'
+        - 'No, only some pages'
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Anything else worth knowing about this source.

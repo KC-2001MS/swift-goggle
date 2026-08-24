@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Goggles Syntax
+    url: https://github.com/brave/goggles-quickstart/blob/main/goggles/quickstart.goggle
+    about: The Goggles DSL used by swift.goggle is documented by Brave here.
+  - name: Contribution Guidelines
+    url: https://github.com/KC-2001MS/swift-goggle/blob/main/CONTRIBUTING.md
+    about: How rules are written and weighted in this project.

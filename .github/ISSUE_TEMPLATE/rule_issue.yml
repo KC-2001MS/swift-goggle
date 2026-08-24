@@ -1,0 +1,44 @@
+name: Rule Issue
+description: Report a rule that does not behave as intended.
+title: "[Rule]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thank you for submitting this. Use this form when a rule in swift.goggle
+        matches something it should not, or fails to match something it should.
+  - type: input
+    id: rule
+    attributes:
+      label: Rule
+      description: The line in swift.goggle that you believe is at fault.
+      placeholder: "*ios*$boost=1,site=github.com"
+    validations:
+      required: true
+  - type: input
+    id: query
+    attributes:
+      label: Search Query
+      description: The query where you noticed the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-results
+    attributes:
+      label: Expected Results
+      description: What the rule was supposed to do.
+    validations:
+      required: true
+  - type: textarea
+    id: actual-results
+    attributes:
+      label: Actual Results
+      description: What happened instead. Include the URLs involved.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Anything else relevant.
